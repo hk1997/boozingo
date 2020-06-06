@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/overview"
+        android:enabled="true"
+        android:icon="@drawable/ic_shopping_bag_24px"
+        android:title="Overview"/>
+    <item
+        android:id="@+id/reviews"
+        android:enabled="true"
+        android:title="Reviews"
+        android:icon="@drawable/ic_comment_bank_24px"
+        />
+</menu>

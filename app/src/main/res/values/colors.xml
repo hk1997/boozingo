@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorToolbar">#00000000</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="headingGray">#4d4d4d</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="lineRed">#990000</color>
+    <color name="buttonRed">#AD1207</color>
+    <color name="guestBrowsingTextColor">#69605F</color>
+    <color name="startColor">#f7DE3B</color>
+    <color name="chipBackground">#259DB0</color>
+</resources>
