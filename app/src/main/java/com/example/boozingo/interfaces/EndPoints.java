@@ -72,4 +72,9 @@ public interface EndPoints {
 
     );
 
+    @FormUrlEncoded
+    @POST("/api/get_details")
+    Call<ResponseShopSummary> getShopDetails(
+        @Field("bar_id") String barId
+    );
 }

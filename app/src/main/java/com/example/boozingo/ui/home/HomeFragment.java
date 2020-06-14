@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.ActionOnlyNavDirections;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -93,6 +94,7 @@ public class HomeFragment extends Fragment {
         shopSummaryAdapter = new ShopSummaryAdapter(homeViewModel.getShopSummaryList().getValue(), getContext(), new ShopSummaryAdapter.OnItemClick() {
             @Override
             public void selectShop(int pos) {
+                appModel.setSelectedShop(homeViewModel.getShopSummaryList().getValue().get(pos).getId());
                 Navigation.findNavController(view).navigate(R.id.action_nav_home_to_shopDetails);
             }
         });

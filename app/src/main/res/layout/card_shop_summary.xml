@@ -39,7 +39,6 @@
                 app:mrb_progressTint="@color/startColor"
                 app:mrb_secondaryProgressTint="@color/startColor"
                 android:id="@+id/material_rating_bar"
-
                 />
             <LinearLayout
                 android:layout_width="match_parent"

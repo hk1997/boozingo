@@ -21,7 +21,7 @@ public class ShopDetailsActivity extends AppCompatActivity {
         ActionBar actionBar= getSupportActionBar();
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
         //loading initial fragment
-        loadFragment(new ShopOverview());
+        loadFragment(new ShopSummaryFragment());
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -30,7 +30,7 @@ public class ShopDetailsActivity extends AppCompatActivity {
                 Fragment fragment= null;
                 switch (item.getItemId()){
                     case R.id.overview:
-                        fragment= new ShopOverview();
+                        fragment= new ShopSummaryFragment();
                         break;
 
                     case R.id.reviews:

@@ -21,11 +21,13 @@ public class AppModel extends ViewModel {
     MutableLiveData<String> cityName;
     MutableLiveData<ArrayList<City>> cityList;
     MutableLiveData<ArrayList<ShopType>> shopTypeList;
+    String selectedShop;
 
     public AppModel(){
         cityName = new MutableLiveData<>();
         cityList = new MutableLiveData<>();
         shopTypeList = new MutableLiveData<>();
+        selectedShop="";
     }
 
     public MutableLiveData<ArrayList<ShopType>> getShopTypeList() {
@@ -44,6 +46,14 @@ public class AppModel extends ViewModel {
             requestCityList();
         }
         return cityList;
+    }
+
+    public String getSelectedShop() {
+        return selectedShop;
+    }
+
+    public void setSelectedShop(String selectedShop) {
+        this.selectedShop = selectedShop;
     }
 
     private void requestCityList(){
